@@ -4,3 +4,7 @@ faiss-cpu
 sentence-transformers
 transformers
 PyMuPDF
+python-docx
+nltk
+openai
+python-dotenv
