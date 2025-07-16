@@ -33,6 +33,12 @@ def get_index_and_chunks():
         chunks = f.read().split("\n---\n")
     return index, chunks
 
+
+@app.get("/")
+def health_check():
+    return {"status": "running"}
+
+
 @app.post("/chat")
 def chat(question: str = Form(...)):
     model = get_model()
